@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $("td.space").click(function(){
+  $(".content").click(function(){
     $(this).text("x")
     });
 });
