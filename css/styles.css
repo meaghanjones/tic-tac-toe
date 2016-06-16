@@ -1,1 +1,34 @@
 /*This file is for your custom css.  All yours*/
+.table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>td,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>thead>tr>th.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th,
+.table-responsive>.table-bordered>tbody>tr:last-child>td, .table-responsive>.table-bordered>tbody>tr:last-child>th, .table-responsive>.table-bordered>tfoot>tr:last-child>td, .table-responsive>.table-bordered>tfoot>tr:last-child>th {
+  border: 5px solid black;
+  width: 33.33%;
+  position: relative;
+}
+
+.table-bordered>tbody>tr>td:after,
+.table-bordered>tbody>tr>th:after,
+.table-bordered>tfoot>tr>td:after,
+.table-bordered>tfoot>tr>th:after,
+.table-bordered>thead>tr>td:after,
+.table-bordered>thead>tr>th.table>tbody>tr>td:after,
+.table>tbody>tr>th:after,
+.table>tfoot>tr>td:after,
+.table>tfoot>tr>th:after,
+.table>thead>tr>td:after,
+.table>thead>tr>th:after,
+.table-responsive>.table-bordered>tbody>tr:last-child>td:after, .table-responsive>.table-bordered>tbody>tr:last-child>th:after, .table-responsive>.table-bordered>tfoot>tr:last-child>td:after, .table-responsive>.table-bordered>tfoot>tr:last-child>th:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
