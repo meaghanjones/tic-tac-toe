@@ -1,6 +1,15 @@
 $(document).ready(function(){
-
+  var turn = 1;
   $(".content").click(function(){
-    $(this).text("x")
-    });
+    if (turn % 2 === 0) {
+      $(this).text("o")
+    } else {
+      $(this).text("x")
+    }
+    turn++
+  });
+$("button#reset").click(function(){
+  turn = 1;
+  $(".content").text('')
+})
 });
