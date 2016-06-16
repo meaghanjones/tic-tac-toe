@@ -13,3 +13,9 @@ $("button#reset").click(function(){
   $(".content").text('')
 })
 });
+
+var Space = function (x, y, clicked){
+  this.x = x;
+  this.y = y;
+  this.clicked = false;
+}
