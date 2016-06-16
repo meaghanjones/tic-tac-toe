@@ -1,21 +1,21 @@
 $(document).ready(function(){
+  var spacesArray = [false, false, false, false, false, false, false, false, false];
   var turn = 1;
   $(".content").click(function(){
-    if (turn % 2 === 0) {
-      $(this).text("o")
+    if (spacesArray[parseInt($(this).attr("id"))-1] === false) {
+      if (turn % 2 === 0) {
+        $(this).text("o")
+      } else {
+        $(this).text("x")
+      }
+      spacesArray[parseInt($(this).attr("id"))-1] = true;
+      turn++
     } else {
-      $(this).text("x")
+      alert("Please choose an unmarked square");
     }
-    turn++
   });
 $("button#reset").click(function(){
   turn = 1;
   $(".content").text('')
 })
 });
-
-var Space = function (x, y, clicked){
-  this.x = x;
-  this.y = y;
-  this.clicked = false;
-}
