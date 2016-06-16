@@ -5,10 +5,11 @@ $(document).ready(function(){
     if (spacesArray[parseInt($(this).attr("id"))-1] === false) {
       if (turn % 2 === 0) {
         $(this).text("o")
+        spacesArray[parseInt($(this).attr("id"))-1] = "o";
       } else {
         $(this).text("x")
+        spacesArray[parseInt($(this).attr("id"))-1] = "x";
       }
-      spacesArray[parseInt($(this).attr("id"))-1] = true;
       turn++
     } else {
       alert("Please choose an unmarked square");
