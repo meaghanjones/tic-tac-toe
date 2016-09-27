@@ -1,8 +1,6 @@
-# 
+# Tic-tac-toe
 
-#### This is a lightweight repository to deploy a basic project at the beginning of each Epicodus pair and solo project. It is meant to save time and support clean builds. Current as of June 2016
-
-#### By Kevin VanEvery and Meaghan Jones
+#### By Kevin VanEvery and Meaghan Jones, June 2016
 
 ## Description
 
